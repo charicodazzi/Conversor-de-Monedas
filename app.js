@@ -43,6 +43,13 @@ const calculoDeMoneda = () =>{
         }
         }
         
-        tipoDeCambio.addEventListener('input', calculoDeMoneda);
+    tipoDeCambio.addEventListener('input', calculoDeMoneda);
     inputCantidad.addEventListener('input', calculoDeMoneda);
+    
+    inputCantidad.addEventListener('input', () =>{
+        inputCantidad.style.backgroundColor = "lighlightblue";
+        tipoDeCambio.style.backgroundColor = "lightblue";
+        resultado.style.backgroundColor = "lightblue";
+    });
+    
     
